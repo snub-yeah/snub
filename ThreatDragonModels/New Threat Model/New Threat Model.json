@@ -19,31 +19,6 @@
         "cells": [
           {
             "position": {
-              "x": 470,
-              "y": 114.00000000000068
-            },
-            "size": {
-              "width": 360,
-              "height": 310
-            },
-            "shape": "trust-boundary-box",
-            "attrs": {
-              "headerText": {
-                "text": "Firewall"
-              }
-            },
-            "id": "d5436deb-9778-41be-92e0-0ab2982fc070",
-            "zIndex": -1,
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "Firewall",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false
-            }
-          },
-          {
-            "position": {
               "x": 330,
               "y": 150
             },
@@ -271,6 +246,52 @@
             "vertices": []
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isBidirectional": false,
+              "reasonOutOfScope": "",
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "hasOpenThreats": false,
+              "threats": []
+            },
+            "id": "65297940-9337-41df-af52-7198cb95b4c2",
+            "source": {
+              "cell": "8903d6b7-3e9d-4bac-b12c-3519a22f5513"
+            },
+            "target": {
+              "x": 660,
+              "y": 350
+            },
+            "vertices": [
+              {
+                "x": 470,
+                "y": 350
+              }
+            ]
+          },
+          {
             "position": {
               "x": 88,
               "y": 150
@@ -300,6 +321,44 @@
               "outOfScope": false,
               "reasonOutOfScope": "",
               "providesAuthentication": false,
+              "hasOpenThreats": false,
+              "threats": [],
+              "isBidirectional": false,
+              "protocol": "",
+              "isEncrypted": false,
+              "isPublicNetwork": false
+            }
+          },
+          {
+            "position": {
+              "x": 64.25,
+              "y": 284
+            },
+            "size": {
+              "width": 160,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "SQL Injection"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "id": "8903d6b7-3e9d-4bac-b12c-3519a22f5513",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Flow",
+              "name": "SQL Injection",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "privilegeLevel": "",
               "hasOpenThreats": false,
               "threats": [],
               "isBidirectional": false,
